@@ -1,6 +1,6 @@
 {
   "name": "mem-bridge",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Extract personal professional knowledge from your workday — privately, portably, automatically.",
   "keywords": ["ai", "memory", "knowledge", "agent", "privacy", "mcp", "claude", "codex"],
   "license": "MIT",
