@@ -1,0 +1,36 @@
+{
+  "name": "mem-bridge",
+  "version": "0.1.0",
+  "description": "Extract personal professional knowledge from your workday — privately, portably, automatically.",
+  "keywords": ["ai", "memory", "knowledge", "agent", "privacy", "mcp", "claude", "codex"],
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "mem-bridge": "./dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "company_patterns.example.yaml"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "start": "node dist/cli.js",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "adm-zip": "^0.5.16",
+    "commander": "^13.1.0",
+    "js-yaml": "^4.1.0"
+  },
+  "devDependencies": {
+    "@types/adm-zip": "^0.5.7",
+    "@types/js-yaml": "^4.0.9",
+    "@types/node": "^22.0.0",
+    "typescript": "^5.7.0"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}

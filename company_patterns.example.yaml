@@ -1,0 +1,36 @@
+# company_patterns.example.yaml
+# Copy to company_patterns.yaml in the same directory as your harvest command
+# and customize for your employer. Update when you change jobs.
+#
+# These regex patterns are applied BEFORE the LLM sees any text.
+# First line of defense against proprietary content leaking.
+
+# Company and product names
+- pattern: "\\bAcmeCorp\\b"
+  replacement: "[COMPANY]"
+- pattern: "\\bAcme\\s+(?:Platform|Dashboard|API|Cloud)\\b"
+  replacement: "[PRODUCT]"
+
+# Project codenames
+- pattern: "\\b(?:Project\\s+)?(?:Phoenix|Titan|Mercury|Atlas)\\b"
+  replacement: "[PROJECT]"
+
+# Colleague names (add your actual team)
+# - pattern: "\\bJane\\s+Smith\\b"
+#   replacement: "[COLLEAGUE]"
+
+# Internal domains
+- pattern: "\\bacmecorp\\.(?:com|io|dev|internal)\\b"
+  replacement: "[COMPANY_DOMAIN]"
+
+# Internal service names
+- pattern: "\\bacme-[a-z]+-(?:service|api|worker|job)\\b"
+  replacement: "[SERVICE]"
+
+# Database / table names
+# - pattern: "\\b(?:users_v2|payments_ledger|audit_events)\\b"
+#   replacement: "[TABLE]"
+
+# Customer names
+# - pattern: "\\bBigBank\\s+Corp\\b"
+#   replacement: "[CUSTOMER]"
