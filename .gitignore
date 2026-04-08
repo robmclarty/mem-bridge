@@ -1,0 +1,12 @@
+node_modules/
+dist/
+*.js.map
+
+*.tgz
+
+.env
+.env.*
+company_patterns.yaml
+
+*.log
+.DS_Store
